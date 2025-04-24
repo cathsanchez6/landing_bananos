@@ -53,12 +53,13 @@ label {
 }
 /* Fondo decorativo fijo inferior */
 .fondo-decorativo {
-  position: absolute;
+  position: relative;
+  justify-content: center;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-height: 200px;
+  max-height: auto;
   overflow: hidden;
   z-index: 0;
 }

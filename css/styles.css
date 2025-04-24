@@ -51,3 +51,14 @@ label {
   color: #555;
   margin-top: 5px;
 }
+.borde-inferior {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.borde-inferior img {
+  width: 100%;
+  display: block;
+}

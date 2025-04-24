@@ -2,47 +2,49 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #d9f0d1; /* verde claro */
+  background-color: #d8f4c7; /* Verde claro suave */
 }
 
-/* Logo centrado y más pequeño */
+/* Logo centrado y con tamaño adecuado */
 .logo {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .logo img {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
-/* Contenedor con borde y sombra */
+/* Contenedor con borde verde oscuro, fondo blanco, esquinas redondeadas y sombra */
 .contenedor-marco {
   background-color: white;
-  border: 8px solid #007837; /* verde Del Monte */
-  border-radius: 30px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border: 8px solid #007837;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   width: 90%;
   max-width: 500px;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 30px;
 }
 
-/* Estilos del contenido */
+/* Título */
 .formulario h2 {
   text-align: center;
   color: #007837;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
+
+/* Etiquetas y campos */
 label {
   display: block;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #333;
 }
 .campo {
-  background-color: #eee;
+  background-color: #eeeeee;
   padding: 12px;
   border-radius: 10px;
   font-style: italic;

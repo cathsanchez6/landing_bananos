@@ -1,54 +1,51 @@
 /* Fondo general */
 body {
-  background-color: #e3f4dc; /* Verde claro Del Monte */
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d9f0d1; /* verde claro */
 }
 
-/* Logo centrado */
+/* Logo centrado y más pequeño */
 .logo {
-  text-align: center;
-  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-
 .logo img {
   width: 120px;
+  height: auto;
 }
 
-/* Contenedor con borde redondeado verde oscuro */
+/* Contenedor con borde y sombra */
 .contenedor-marco {
   background-color: white;
-  border: 6px solid #00732f; /* Verde Del Monte */
-  border-radius: 24px;
+  border: 8px solid #007837; /* verde Del Monte */
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 90%;
   max-width: 500px;
-  margin: 40px auto;
-  padding: 30px 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  padding: 30px;
 }
 
-/* Encabezado del formulario */
+/* Estilos del contenido */
 .formulario h2 {
-  color: #00732f;
   text-align: center;
-  margin-bottom: 24px;
+  color: #007837;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-
-/* Etiquetas */
 label {
-  font-weight: bold;
-  color: #333;
   display: block;
-  margin-bottom: 6px;
-  margin-top: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
 }
-
-/* Campos tipo texto estilo tarjeta */
 .campo {
-  background-color: #f0f0f0;
-  color: #666;
-  padding: 12px 16px;
-  border-radius: 12px;
+  background-color: #eee;
+  padding: 12px;
+  border-radius: 10px;
   font-style: italic;
-  font-size: 1em;
+  color: #555;
+  margin-top: 5px;
 }

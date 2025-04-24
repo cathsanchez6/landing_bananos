@@ -4,103 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Del Monte</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    .logo {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .logo img {
-      height: 100px;
-      max-width: 200px;
-    }
-
-    .formulario {
-      background: white;
-      padding: 30px 20px;
-      border-radius: 18px;
-      max-width: 450px;
-      width: 90%;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #0074c1;
-      margin-bottom: 25px;
-    }
-
-    .campo {
-      background: #f0f0f0;
-      padding: 10px 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      color: #333;
-      font-size: 15px;
-      font-style: italic;
-    }
-
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 20px;
-      margin-bottom: 5px;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      font-size: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-
-    button {
-      background-color: #349800;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 6px;
-      padding: 12px;
-      width: 100%;
-      margin-top: 20px;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #2b7a00;
-    }
-
-    .footer {
-      background: #ffdb4d;
-      margin-top: 30px;
-      width: 100%;
-      padding: 30px 0;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: #0839a2;
-    }
-
-    .footer span {
-      display: block;
-      font-size: 32px;
-      color: #0074c1;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -109,21 +13,21 @@
     <img src="assets/logo.png" alt="Logo Del Monte">
   </div>
 
-
-
+  <!-- Caja con la información -->
   <div class="formulario">
     <h2>Información</h2>
     <h3>Certificado:</h3>
-
     <div class="campo">EU organic</div>
-    <h3> Pais de Origen:</h3>
+    <h3>País de Origen:</h3>
     <div class="campo">Ecuador</div>
-
   </div>
 
-  <div class="footer">
-   Sobre nosotros <span>En Del Monte, queremos que más mesas tengan verduras de calidad todos los días. Por eso, desde 1962 decidimos volvernos expertos en el cuidado de cada detalle: desde que elegimos las mejores semillas para sembrar, hasta que enlatamos lo que cosechamos. Brindándole a tus platillos, vegetales nutritivos y deliciosos..</span>
-  </div>
+  <!-- Footer informativo -->
+  <footer class="footer">
+    <p>Sobre nosotros</p>
+    <span>En Del Monte, queremos que más mesas tengan verduras de calidad todos los días. 
+      Desde 1962 cuidamos cada detalle: desde las semillas hasta el enlatado, para brindarte vegetales nutritivos y deliciosos.</span>
+  </footer>
 
 </body>
 </html>

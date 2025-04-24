@@ -1,22 +1,54 @@
-.nosotros {
-  background-color: #00732f;
-  color: white;
+/* Fondo general */
+body {
+  background-color: #e3f4dc; /* Verde claro Del Monte */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo centrado */
+.logo {
   text-align: center;
-  padding: 40px 20px;
-  font-size: 16px;
+  margin-top: 40px;
 }
 
-.nosotros h2 {
-  color: #fef3c0;
-  font-family: 'Segoe UI Semibold', sans-serif;
-  font-size: 24px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.logo img {
+  width: 120px;
 }
 
-.nosotros p {
-  max-width: 800px;
-  margin: 0 auto 30px auto;
-  line-height: 1.6;
+/* Contenedor con borde redondeado verde oscuro */
+.contenedor-marco {
+  background-color: white;
+  border: 6px solid #00732f; /* Verde Del Monte */
+  border-radius: 24px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado del formulario */
+.formulario h2 {
+  color: #00732f;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Etiquetas */
+label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+/* Campos tipo texto estilo tarjeta */
+.campo {
+  background-color: #f0f0f0;
+  color: #666;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-style: italic;
+  font-size: 1em;
 }

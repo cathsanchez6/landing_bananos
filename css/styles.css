@@ -1,31 +1,58 @@
 /* Fondo general */
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #a3d65c; /* Verde claro suave */
+  background-color: #a3d65c; /* Verde claro */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow-x: hidden;
 }
 
-/* Logo centrado y con tamaño adecuado */
-.logo {
+/* Contenedor principal */
+.contenedor-principal {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  flex-grow: 1;
+  z-index: 10;
+  animation: aparecer 1s ease-out forwards;
 }
+
+/* Animación suave de entrada */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo */
 .logo img {
   width: 100px;
   height: auto;
 }
 
-/* Contenedor con borde verde oscuro, fondo blanco, esquinas redondeadas y sombra */
+/* Formulario */
 .contenedor-marco {
   background-color: white;
-  border: 8px solid #007837;
-  border-radius: 25px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 5px solid #007837;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin-top: 20px;
   width: 90%;
   max-width: 500px;
-  margin: 40px auto;
-  padding: 30px;
+  position: relative;
+  z-index: 10;
 }
 
 /* Título */
@@ -33,35 +60,34 @@ body {
   text-align: center;
   color: #007837;
   font-size: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-/* Etiquetas y campos */
+/* Campos */
 label {
   display: block;
   font-weight: bold;
   margin-top: 20px;
   color: #333;
+  font-size: 14px;
 }
 .campo {
   background-color: #eeeeee;
-  padding: 12px;
+  padding: 12px 15px;
   border-radius: 10px;
-  font-style: italic;
   color: #555;
   margin-top: 5px;
+  font-style: italic;
+  font-size: 14px;
 }
-/* Fondo decorativo fijo inferior */
+
+/* Fondo decorativo inferior */
 .fondo-decorativo {
-  position: relative;
-  justify-content: center;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
-  max-height: auto;
-  overflow: hidden;
-  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .fondo-decorativo img {
@@ -70,9 +96,23 @@ label {
   display: block;
 }
 
-/* Asegura que el formulario quede encima del fondo */
-.contenedor-marco {
-  position: relative;
-  z-index: 10;
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .contenedor-marco {
+    padding: 20px;
+    border-width: 4px;
+  }
+  .formulario h2 {
+    font-size: 20px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .campo {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+  .logo img {
+    width: 80px;
+  }
 }
-
